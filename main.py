@@ -21,5 +21,5 @@ async def orderAdded(request:Request):
             print(f'order received : {order}')
             print(f'{order.get("records")}')
 
-
+            return order
 
