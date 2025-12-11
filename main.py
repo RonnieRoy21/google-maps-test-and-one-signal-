@@ -19,3 +19,7 @@ app.add_middleware(
 async def orderAdded(request:Request):
             order=await request.json()
             print(f'order received : {order}')
+            print(f'{order.get("records")}')
+
+
+
